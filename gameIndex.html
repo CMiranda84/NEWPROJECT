@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuIz GaMe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <!-- <header class="image-container">
+
+  <img src="https://img.freepik.com/vetores-gratis/sinal-de-neon-quiz_1262-19629.jpg?t=st=1710101985~exp=1710105585~hmac=9fdeb01a9f7cdd392d4d8cfea87e08be4d1a64316ba134c178c35fb8741f7053&w=1060" alt="Quiz Game image">
+</header> -->
+  <body>
+    <div id="hello-screen">
+      <p> <H2> This is Iron Quiz Game</H2></p>
+      <p> <h5>In this game you start at the starting line where you will have 8 categories with some random questions representing each category, your goal will be to get as many questions right as possible to advance to the finish line and win the game.</h5> </p>
+      <p><h3>Good Luck</h3></p>
+      <button id="startbtn">Start the Game</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+      <h1>Categories</h1>
+      <div class="categories">
+        <button id="geographyBtn">Geografia</button>
+        <button id="generalCultureBtn">Cultura Geral</button>
+        <button id="generalKnowledgeBtn">Geral knowlegde</button>
+        <button id="musicBtn">Music</button>
+        <button id="mathBtn">Math</button>
+        <button id="cienceBtn">Cience</button>
+        <button id="cinemaBtn">Cinema</button>
+      </div>
+
+      <div class="players-container">
+        <h2>Create Your Player Character</h2>
+        <label for="nameInput">Player 1 enter your character's name:</label>
+        <input type="text" id="nameInput" placeholder="Enter name...">
+      </br>
+      <label for="nameInput2">Player 2 enter your character's name:</label>
+      <input type="text" id="nameInput2" placeholder="Enter name...">
+    </br>
+      <button id="createCharacterBtn">Create Characters</button>
+        
+        <div id="characterDisplay" class="hidden">
+          <h2>Your Character</h2>
+          <p>Player1: <span id="characterName"></span></p>
+          <p>Player2: <span id="characterName2"></span></p>
+          <b>Roll the dice to see who is playing first   .</b>
+          <button type="button" class="startingDice"><img src="https://img.freepik.com/vetores-gratis/dados-de-desenhos-animados_78370-2910.jpg?t=st=1710166764~exp=1710170364~hmac=63b8902f05c7b316a2071c72c3d6bbd4bb261d67fde87160311a48991d701f1f&w=740" height ="45" width="70" alt="Dice"></button>
+        </div>
+      </div> </b>
+      <div id="starter"></div>
+
+      <div id="passarele" class="hidden">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div id="questionContainer" class="hidden">
+        <p id="question"></p>
+        <div id="options"></div>
+      </div>
+      <div id="result" class="hidden">
+        <p id="resultText"></p>
+        <button id="nextBtn">Next</button>
+      </div>
+      <div id="score">
+        <p>Score:</p>
+        <p id="player1Score">player 1: 0</p>
+        <p id="player2Score">player 2: 0</p>
+      </div>
+    </div>
+    <!---->
+    <script src="./index.js"></script>
+    <script src="./Quiz.js"></script>
+    <script src="./Questions.js"></script>
+  </body>
+</html>

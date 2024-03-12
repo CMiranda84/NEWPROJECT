@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+.player-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* #game-container {
+  display: flex;
+  flex-direction:row;
+} */
+
+#passarele {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+} 
+.cell {
+  width: 50px; /* Defina o tamanho desejado para cada célula */
+  height: 50px; /* Defina o tamanho desejado para cada célula */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px; /* Espaçamento entre as células */
+  background-color: aquamarine;
+}
+/* .background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* .image-container img {
+  display: inline-block;
+  width: 600px;
+  height: 150px;
+} */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+#quizView,
+#endView {
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
