@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuIz GaMe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script  src="player.js"></script>
+    <script  src="questions.js"></script>
+    <script  src="questionprovider.js"></script>
+    <script  src="game.js"></script>
+      
+      
+  </head>
+    <body>
+        <button class="btn-startGame" id="btnStartGame"> Create Players </button>
+        
+        <div id="containerStartGame" class="hidden">
+            <div id="container-createPlayer">
+                <button id="btn-CreatePlayers">Start Game</button>
+            </div>
+            
+            <div id="rollDiceContainer"></div>
+            
+            <button id="btn-categoryMusic">Music</button>
+            <button id="btn-categoryScience">Science</button>
+            <button id="btn-categoryGeneral Knowledge">General Knowledge</button>
+            <button id="btn-categoryGeography">Geography</button>
+            <button id="btn-categoryMaths">Maths</button>
+            <button id="btn-categoryCinema">Cinema</button>
+        </div>
+<div class="quiz-container">
+  <h1>Iron Quiz</h1>
+  <div class="quiz">
+    <h2 id="questions">quesntions goes here</h2>
+    <div id="answer-buttons">
+      <button class="btn">Answer 1</button>
+      <button class="btn">Answer 2</button>
+      <button class="btn">Answer 3</button>
+      <button class="btn">Answer 4</button>
+    </div>
+    <button id="next-btn"></button>
+  </div>
+</div>
+
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+</html>
