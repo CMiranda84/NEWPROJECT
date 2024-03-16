@@ -3,24 +3,50 @@ class QuestionProvider{
     constructor(){
         this.questions = [
             
-            //category science
-            new Question("adad", "https://www.facebook.com/2336c7d1-1ce9-45c5-8790-85edd3c523f7", ["asdasd", "dasda", "asdas"], 2, "science"),
-            new Question("aaa", null, ["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflddadakjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dddd", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflka232jgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("Who sing this song 'My Boo'?", "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfPgf2meEX1w%2Fmaxresdefault.jpg&tbnid=Ddy0QwehFoKpvM&vet=12ahUKEwjN7a-q---EAxWCTaQEHQUGCjEQMygCegQIARBW..i&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfPgf2meEX1w&docid=RgKG1CCtYT6ARM&w=1280&h=720&q=usher%20my%20boo&ved=2ahUKEwjN7a-q---EAxWCTaQEHQUGCjEQMygCegQIARBW", ["Usher", "Bionce", "Chris Brown"], 0, "Music"),
-            new Question("dflkjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjgda adadsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjadadqqqgsdfl", null,["asdasd", "dasda", "asdas"], 2, "asda"),
-            new Question("dflkjeeeegsdfl", null,["asdasd", "dasda", "asdas"], 2, "science"),
-            //category music
-            new Question("dflkjgsdfl", null, ["asdasd", "dasda", "asdas"], 2, "music")
-            
+            //category geography
+            new Question("What is the highest point on Earth? ",
+             ["Eiffel tower", "Mount Everest", "Nanga Parbat", "Egypt pyramid"], "Mount Everest", "geography"),
+            new Question("What is the largest river in the world by volume of water", 
+            ["Congo River", "Mississippi RIver", "Amazon River","Nilo River"], "Amazon River", "geography"),
+            new Question("What is the largest desert in the world, which is made up  of ice?",
+             ["Greenland desert", "Arctic", "Sahara","Antarctic"],"Antarctic", "geography"),
+            new Question("What is the capital of Australia? ", 
+            ["Melbourne", "Sidney", "Austra Capital","Canberra"], "Canberra", "geography"),
+            new Question("What is the largest country in South America in terms of land area", 
+            ["Brazil", "Mexico", "Argentina","Colombia"], "Brazil", "geography"),
+            ////////////////////////Music/////////////////////////////////////////
+            new Question("What is the best-selling album of all time?",
+            ["'Thriller' - Michael Jackson", "'The Dark Side of the Moon' - Pink Floyd",
+              "'Back in Black' - AC/DC",  "'Led Zeppelin IV' - Led Zeppelin Correct"],
+                "'Thriller' - Michael Jackson", "music"),
+            new Question("Which British rock band is known as 'The Fab Four'?",
+             ["The Rolling Stones", "The Who", "Queen", "The Beatles"],  "The Beatles", "music"),
+            new Question("Who is the lead singer of the rock band Queen?", 
+            ["Freddie Mercury", "Mick Jagger", "David Bowie", "Robert Plant"], "Freddie Mercury", "music"),
+            new Question("Which of these artists is known as the 'King of Pop'?", 
+            ["Prince", "Justin", "Timberlake", "Madonna", "Michael Jackson"], "Michael Jackson", "music"),
+            new Question("Which singer is known for hits such as 'Rolling in the Deep' and 'Hello'?", 
+            ["Taylor Swift", "Beyoncé", "Adele", "Rihanna"] ,"Adele","music"),
+            new Question("What is the name of the famous music festival held annually in Indio, California?",
+                ["Lollapalooza", "Coachella", "Glastonbury", "Burning Man"] , "Coachella", "music"),
+                ///////////////////////////////////cinema////////////////////////////////////////
+                new Question("What is the name of the actor who played the Joker in the 2008 film 'The Dark Knight'?",
+                 ["Heath Ledger","Joaquin Phoenix"," Jack Nicholson","Jared Leto","Cesar Romero"],  "Heath Ledger", "cinema"),
+                new Question("In which movie did Leonardo DiCaprio win his first Oscar for Best Actor?", 
+                ["The Revenant", "Titanic", "The Wolf of Wall Street", "Blood Diamond"], "The Revenant", "cinema"),
+                new Question("What is the name of the actress who played the character Katniss Everdeen in the 'Hunger Games' film series?", 
+                ["Emma Watson", "Jennifer Lawrence", "Scarlett Johansson", "Kristen Stewart"], "Jennifer Lawrence", "cinema"),
+                new Question("What is the name of the director of the film 'Titanic', released in 1997 and one of the highest-grossing films of all time?", 
+                ["Steven Spielberg", "Quentin Tarantino", "Christopher Nolan", "James Cameron"] ,"James Cameron","cinema"),
+                new Question("What is the name of the 2009 Pixar animated film set in a post-apocalyptic world inhabited by robots?",
+                    ["Toy Story", "Wall-E", "Finding Nemo", "Ratatouille"] , "Wall-E", "cinema"),
+                new Question("Which 1973 horror film directed by William Friedkin is based on a real case of demonic possession?",
+                    ["Halloween", "A Nightmare on Elm Street", "Psycho", "The Exorcist"] , "The Exorcist", "cinema"),
+                    ////////////////////////////////////////////general knowledge////////////////////////////////:
+            new Question("Witch football player has mora 'balon d'or?", ["Ronaldinho", "Messi", "C Ronaldo", "Mbapé"], "Ronaldinho", "general knowledge")
+
+
+
         ];
     }
     getRandomQuestion()

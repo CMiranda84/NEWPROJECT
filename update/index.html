@@ -4,25 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuIz GaMe</title>
-    <link rel="stylesheet" href="style.css" />
-    <script  src="player.js"></script>
-    <script  src="questions.js"></script>
-    <script  src="questionprovider.js"></script>
-    <script  src="game.js"></script>
-      
-      
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="main.css" />
+    <script src="player.js"></script>
+    <script src="questions.js"></script>
+    <script src="questionProvider.js"></script>
+    <script src="game.js"></script>
   </head>
-    <body>
-        <button class="btn-startGame" id="btnStartGame"> Create Players </button>
-        
-        <div id="containerStartGame" class="hidden">
-            <div id="container-createPlayer">
-                <button id="btn-CreatePlayers">Start Game</button>
-            </div>
-            
-            <div id="rollDiceContainer"></div>
-            <div id="question-container"></div>
-        </div>
-    </body>
-    <script type="text/javascript" src="index.js"></script>
+  <body>
+    <section id="start-screen">
+      <div id="firstMessage">
+        <h1>--IrOn QuIz RaCe--</h1>
+
+        <h2>
+          In this game you start at the starting line where you will have 8
+          categories with some random questions representing each category, your
+          goal will be to get as many questions right as possible to advance to
+          the finish line and win the game.
+        </h2>
+        <h3>Create your player and start the Game</h3>
+      </div>
+
+      <button class="btn-startGame" id="btnCreatePlayers">
+        <strong>Create Players</strong>
+      </button>
+    </section>
+
+    <div id="containerStartGame" class="hidden">
+      <div id="containerCreatePlayer">
+        <button id="btnStartGame">Start Game</button>
+      </div>
+      <div class="first-row">
+        <div id="question-container"></div>
+      </div>
+      <div id="rollDiceContainer"></div>
+      <div id="categoriesContainer"></div>
+
+      <div id="nextButtonContainer"></div>
+    </div>
+    <div id="boardcontainer" class="hidden">
+      <h1 id="who">Who's gonna win???</h1>
+      <div id="board-player-one">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div id="board-player-two">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <div id="new-game-container"></div>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

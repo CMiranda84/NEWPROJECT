@@ -1,3 +1,225 @@
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
+#firstMessage {
+  justify-content: center;
+  width: 80%;
+}
+body {
+  top: 190px;
+  left: 10%;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(147, 141, 202);
+  position: relative;
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-quiz-com-objetos-planos_23-2147593080.jpg?t=st=1710493753~exp=1710497353~hmac=a420a5523e75150342f02874fd8cb395f345e3dbe34b29e2d0bce398be05e85b&w=740");
+}
+#btnCreatePlayers {
+  font-size: 25px;
+  color: #00a1ff;
+}
+#btn-rollDice {
+  margin: 50px 40%;
+  width: 18%;
+  height: 44px;
+  font-size: x-large;
+  position: relative;
+  bottom: 75%;
+}
+
+#btn-rollDice > p {
+  position: relative;
+  bottom: 158%;
+  font-size: xx-large;
+}
+
+#rollDiceContainer {
+  text-align: center;
+  font-size: 23px;
+  width: 77%;
+  height: 78px;
+  position: relative;
+  left: 165px;
+  top: 13px;
+}
+#btnStartGame {
+  margin: 70px 40%;
+  width: 20%;
+  height: 49px;
+  font-size: x-large;
+}
+#who {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto; /* Push board to the bottom */
+}
+#board-player-one,
+#board-player-two {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto; /* Push board to the bottom */
+}
+.cell {
+  width: 100px;
+  height: 90px;
+  border: 0 solid black;
+  border-bottom-width: 2px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: end;
+  background: white;
+}
+.player-one {
+  background-image: url("images/car_one.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.player-two {
+  background-image: url("images/car_two.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+#categoriesContainer {
+  position: relative;
+  text-align: right;
+  right: 20px;
+  margin: 20px;
+}
+
+/* #btn-c {ategorycontainer
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 70%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  font-style: oblique;
+  height: 90px;
+} */
+#question-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 67px 30%;
+  border-radius: 10px;
+  padding: 30px;
+}
+#question-container > h2 {
+  text-align: center;
+  font-size: 23px;
+  width: 77%;
+  height: 78px;
+  position: relative;
+  left: 52px;
+  top: 13px;
+}
+.question-container-background {
+  background-image: url("https://img.freepik.com/vetores-premium/novo-letreiro-de-neon-realista-do-logotipo-do-quiz-para-decoracao-e-cobertura-no-fundo-escuro-da-parede_175838-963.jpg?w=900");
+  background-size: contain;
+  height: 350px;
+}
+
+.quiz-container {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.quiz-container h1 {
+}
+.btn {
+  background: #fff;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 5px auto;
+  text-align: left;
+  border-radius: 4px;
+  width: 70%;
+  position: relative;
+  left: 69px;
+  /* top: 35px; */
+}
+.button-first {
+  background: red;
+}
+.button-second {
+  background: yellow;
+}
+
+@font-face {
+  font-family: "Press Start 2p";
+}
+
+.video-game-button {
+  text-shadow: 1px 1px pink, -1px -1px maroon;
+
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 1.5em;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+  background-color: red;
+  -webkit-box-shadow: 0 0.2em maroon;
+  -moz-box-shadow: 0 0.2em maroon;
+  -o-box-shadow: 0 0.2em maroon;
+  box-shadow: 0 0.2em maroon;
+  color: red;
+  margin: 5px;
+  background-color: red;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.start-btn {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+}
+.video-game-button:active,
+.start-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2em;
+}
+.correct-answer {
+  background: forestgreen !important;
+  color: white !important;
+}
+.wrong-answer {
+  background: rgb(221, 38, 38) !important;
+  color: white !important;
+}
+/* .disabled {
+} */
